@@ -1,15 +1,14 @@
-package com.example.myapplication;
+package com.example.myapplication.utils;
 
 import android.content.Context;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
-public final class ScreenUtils {
+public class ScreenUtils {
 
-    private ScreenUtils() {
+    private ScreenUtils(){
         // This class is not publicly instantiable
     }
-
     public static int getScreenHeight(Context context) {
         WindowManager windowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         DisplayMetrics dm = new DisplayMetrics();
@@ -23,5 +22,4 @@ public final class ScreenUtils {
         windowManager.getDefaultDisplay().getMetrics(dm);
         return dm.widthPixels;
     }
-
 }
