@@ -2,9 +2,9 @@ package com.example.myapplication.model;
 
 public class Wallpaper {
 
-   private int height;
-   private int width;
-   private String imageUrl;
+    private int height;
+    private int width;
+    private String imageUrl;
 
     public int getHeight() {
         return height;
@@ -30,17 +30,17 @@ public class Wallpaper {
         this.imageUrl = imageUrl;
     }
 
-    public Wallpaper(int height, int width, String imageUrl) {
-        this.height = height;
+    public Wallpaper(int width, int height, String imageUrl) {
         this.width = width;
+        this.height = height;
         this.imageUrl = imageUrl;
     }
 
     @Override
     public String toString() {
         return "Wallpaper{" +
-                "height=" + height +
-                ", width=" + width +
+                "width=" + width +
+                ", height=" + height +
                 ", imageUrl='" + imageUrl + '\'' +
                 '}';
     }

@@ -24,6 +24,7 @@ public final class WallpaperUtils {
         float ratio = ((float) screenHeight / (float) screenWidth);
 
         for (Wallpaper wp : wallpapers) {
+            // if it matches
             if (wp.getWidth() == screenWidth && wp.getHeight() == screenHeight) {
                 wallpaper = wp;
                 break;

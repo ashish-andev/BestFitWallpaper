@@ -20,11 +20,12 @@ public class MainActivity extends AppCompatActivity {
 
         List<Wallpaper> wallpapers = new ArrayList<>();
 
-        wallpapers.add(new Wallpaper(100, 100, ""));
-        wallpapers.add(new Wallpaper(100, 100, ""));
-        wallpapers.add(new Wallpaper(100, 100, ""));
-        wallpapers.add(new Wallpaper(100, 100, ""));
-        wallpapers.add(new Wallpaper(100, 100, ""));
+        wallpapers.add(new Wallpaper(320, 480, ""));
+        wallpapers.add(new Wallpaper(480, 850, ""));
+        wallpapers.add(new Wallpaper(480, 854, ""));
+        wallpapers.add(new Wallpaper(720, 1280, ""));
+        wallpapers.add(new Wallpaper(1080, 1920, ""));
+        wallpapers.add(new Wallpaper(1080, 2340, ""));
 
         WallpaperUtils wallpaperUtils = new WallpaperUtils(MainActivity.this);
         Wallpaper wallpaper = wallpaperUtils.getBestFitWallpaper(wallpapers);
